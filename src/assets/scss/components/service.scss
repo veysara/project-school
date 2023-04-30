@@ -1,0 +1,52 @@
+@import '../variables/variables';
+.service-list{
+    background-color: $bg-gray;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-top: 12rem;
+    .head{
+      color: $main;
+      .title h2{
+        color: $main;
+      }
+    }
+  }
+  .service-item{
+    padding: 1.1rem;
+    background-color: $white;
+    border-radius: 10px;
+    .image{
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    .content{
+      padding: .7rem 0;
+    }
+  }
+
+  @media only screen and (max-width: 576px) {
+    .service-list{
+      #service{
+        margin-bottom: 0.5rem !important;
+        &:nth-child(odd){
+          padding-right:5px;
+        }
+        &:nth-child(even){
+          padding-left: 5px;
+        }
+        .service-item{
+          padding: 0.5rem;
+          .title h4, .title .h4 {
+            font-size: 1rem;
+          }
+          .content{
+            .short{
+              font-size: 0.8rem;
+            }
+          }
+        }
+      }
+      
+    }
+  }

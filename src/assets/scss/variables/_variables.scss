@@ -1,0 +1,24 @@
+//  ================================================================================================
+//  ? TIP:  It is recommended to use this file for overriding bootstrap variables.
+//  ================================================================================================
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+@font-face {
+    font-family: 'Inter', sans-serif;
+    font-weight: normal;
+    font-style: normal;
+}
+
+$font-family-sans-serif: 'Inter';
+$--bs-font-sans-serif:'Inter';
+$main: #211E3B;
+// $primary: #0a74e8;
+$primary: #b10a47;
+$second: #FEBC35;
+$bg-light-gray: #fdf6f6;
+$bg-gray: #F2F7FD;
+$main-gray: #EEF4FC;
+$pagination-color: #7B7B7B;
+$pagination-focus-bg: $main;
+$white:  #ffffff;
+$form-range-track-bg: $main;
+

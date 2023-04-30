@@ -1,0 +1,35 @@
+@import '../../../assets/scss/variables/variables';
+section.counter{
+    background-color: $primary;
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 10px;
+    padding: 3rem 2rem;
+    margin-bottom: -8rem;
+    position: relative;
+    z-index: 1;
+    .counter-item{
+        text-align: center;
+        color: $white;
+        .image{
+            width: 80px;
+            margin: 0 auto;
+        }
+        .counter{
+            font-size: 3rem;
+            font-weight: 500;
+        }
+    }
+}
+@media only screen and (max-width: 768px) {
+    section.counter {
+        .counter-item {
+            .counter{
+                font-size: 1.5rem;
+                }
+                .image{
+                    width: 60px;
+                }
+        }
+    }
+}

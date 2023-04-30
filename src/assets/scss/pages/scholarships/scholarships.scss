@@ -1,0 +1,74 @@
+.scholarships{
+    .form-section{
+        padding: 40px 0;
+        .container{
+            .row{
+                .col-sm-4{
+                    .section-contact{
+                        .form-contact{
+                            .text{
+                                width: 100%;
+                                background-color: #F5F5F5;
+                                border-radius: 0;
+                                border: none;
+                                padding: 13px 35px;
+                                margin-top: 5px;
+                                border-radius: 5px;
+                            }
+                            .textarea{
+                                width: 100%;
+                                background-color: #F5F5F5;
+                                border-radius: 0;
+                                border: none;
+                                padding: 13px 35px;
+                                height: 150px;
+                                border-radius: 5px;
+                            }
+                            a.btn-main {
+                                text-align: center;
+                                width: 100%;
+                            }
+                            .bg-color{
+                                margin-bottom: 20px;
+                                background-color: rgb(1, 1, 56);
+                                border: none;
+                                height: 40px;
+                                color: white;
+                                border-radius: 5px;
+                            }
+                            .bg-color:hover{
+                                background-color: rgb(122, 3, 3);
+                            }
+                        }
+                    }
+                }
+
+
+                .col-sm-7{
+                    .section-service{
+                        .form-service{
+                            .card-img-top{
+                                width: 100%;
+                                height: auto;
+                                border-radius: 5px;
+                            }
+                            .content-center{
+                                .box-content{
+                                    .title strong{
+                                        color: rgb(1, 1, 56);
+                                        font-weight: bold;
+                                        margin-top: 1.5rem;
+                                        font-size: 20px;
+                                    }
+                                    .descript p{
+                                        color: black;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
