@@ -4,7 +4,7 @@
     <section class="swiper-container">
       <swiper :options="optionSlide" class="swiper">
         <swiper-slide  v-for="(slide, index) in List_Slide" :key="'slide' + index">
-          <img :src="slide.img" class="img-fluid w-100" alt="..." />
+          <img :src="slide.img" class="img-fluid" alt="..." />
         </swiper-slide>
       </swiper>
     </section>

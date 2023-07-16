@@ -27,9 +27,7 @@
               </b-nav-item>
               <b-nav-item :to="{ name: 'Courses' }">COURSES</b-nav-item>
               <b-nav-item :to="{ name: 'FAQ' }">FAQ</b-nav-item>
-              <b-nav-item class="btn-kickstart" :to="{ name: 'ContactUs' }">
-                <b-button>CONTACT US</b-button>
-              </b-nav-item>
+              <b-nav-item :to="{ name: 'ContactUs' }">CONTACT US</b-nav-item>
               <b-nav-item>
                 <div class="menu">
                   <div class="button-wrap">

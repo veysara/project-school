@@ -1,10 +1,8 @@
 @import '../variables/variables';
 #header {
   section.header-group {
-    padding: 5px 15px;
-    // background-color: rgba(74, 74, 211, 0.538);
     .logo img {
-      width: 80px;
+      width: 60px;
     }
     .navbar-nav {
       padding-left: 4rem;
@@ -111,21 +109,6 @@
         }
       }
     }
-    li.btn-kickstart{
-      .nav-link{
-        padding: 0 !important;
-        .btn{
-          text-align: center;
-          border-radius: 0;
-          border: 1.5px solid rgb(2, 2, 112);
-          transition: .4s;
-          padding: 5px;
-          font-size: 13px;
-          color: rgb(1, 1, 56);
-          background-color: white;
-        }
-      }
-    }
   }
 }
 @media only screen and (max-width: 992px) {
@@ -147,7 +130,7 @@
   .navbar-toggler:focus {
     box-shadow:none;
   }
-  }
+}
 @media only screen and (max-width: 768px) {
   #header .top-bar .top-head::after {
     width: 63%;

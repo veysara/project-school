@@ -4,8 +4,10 @@
         width: 100%;
         .swiper{
             .swiper-slide{
-                width: 0;
                 margin-right: 0;
+                .img-fluid{
+                    height: 530px;
+                }
                 .content-title{
                     position: absolute;
                     top: 75%;
