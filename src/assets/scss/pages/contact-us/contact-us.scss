@@ -3,6 +3,7 @@
         color: rgb(1, 1, 56);
         margin-bottom: 20px;
     }
+    
     .contact_us{
         background-color: #f1f1f1;
         padding: 80px 0px;
@@ -13,11 +14,11 @@
         position: relative;
         box-shadow: 20px 22px 44px #cccc;
         border-radius: 25px;
+        padding: 50px;
         .contact_field{
-            padding: 60px 340px 90px 100px;
             h3{
                 color: #000;
-                font-size: 40px;
+                font-size: 30px;
                 letter-spacing: 1px;
                 font-weight: 600;
                 margin-bottom: 10px
@@ -45,7 +46,8 @@
             }
 
             button.contact_form_submit {
-                background: linear-gradient(to top right, #1325e8 -5%, #8f10b7 100%);
+                background-color: #1325e8;
+                // background: linear-gradient(to top right, #1325e8 -5%, #8f10b7 100%);
                 border: none;
                 color: #fff;
                 padding: 10px 15px;
@@ -58,30 +60,16 @@
             }
         }
 
-        .right_conatct_social_icon{
-            height: 100%;
-            .socil_item_inner{
-                padding-bottom: 10px;
-                li{
-                    list-style: none;
-                    a{
-                        color: #fff;
-                        margin: 0px 15px;
-                        font-size: 14px;
-                    }
-                }
-            }
-        }
-
         .contact_info_sec {
-            position: absolute;
+            // position: absolute;
             background-color: #1325e8;
             right: 1px;
-            top: 18%;
-            height: 340px;
-            width: 340px;
+            top: 35%;
+            width: 100%;
             padding: 40px;
-            border-radius: 25px 0 0 25px;
+            // border-radius: 25px 0 0 25px;
+            border-radius: 25px;
+            color: white;
             h4{
                 letter-spacing: 1px;
                 padding-bottom: 15px;
@@ -98,7 +86,6 @@
             }
         }
     }
-
 
     .map_sec{
         padding: 50px 0px;
