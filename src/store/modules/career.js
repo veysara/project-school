@@ -3,6 +3,7 @@ const state = {
     career: {},
     careerDetail:{},
 }
+
 const getters = {
     career: (state) => state.career,
     careerDetail: (state) => state.careerDetail,

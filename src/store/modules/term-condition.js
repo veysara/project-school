@@ -3,6 +3,7 @@ import api from "@/api";
 const state = {
   condition: {},
 };
+
 const getters = {
     condition: (state) => state.condition,
   };

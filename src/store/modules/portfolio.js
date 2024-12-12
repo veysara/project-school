@@ -1,8 +1,10 @@
 import api from "@/api";
+
 const state = {
     portfolio: {},
     portfolioDetail:{},
 }
+
 const getters = {
     portfolio: (state) => state.portfolio,
     portfolioDetail: (state) => state.portfolioDetail,
@@ -20,6 +22,7 @@ const actions = {
         })
     }
 }
+
 const mutations = {
     setPortfolio: (state, portfolio) => (state.portfolio = portfolio),
     setPortfolioDetail: (state, portfolioDetail) => (state.portfolioDetail = portfolioDetail),

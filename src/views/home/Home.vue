@@ -1,6 +1,5 @@
 <template>
   <div class="home">
-
     <section class="swiper-container">
       <swiper :options="optionSlide" class="swiper">
         <swiper-slide  v-for="(slide, index) in List_Slide" :key="'slide' + index">
@@ -98,7 +97,6 @@
       SwiperSlide,
     },
     data() {
-      
       return {
         optionSlide: {
           loop: true,
@@ -180,7 +178,6 @@
     },
   };
 </script>
-
 
 <style lang="scss">
   @import '@core/assets/scss/swiper';

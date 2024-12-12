@@ -23,7 +23,6 @@
     };
 </script>
 
-
 <style lang="scss">
     @import '../../assets/scss/pages/courses/courses';
 </style>

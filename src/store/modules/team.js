@@ -20,6 +20,7 @@ const actions = {
         })
     }
 }
+
 const mutations = {
     setTeam: (state, team) => (state.team = team),
     setTeamDetail: (state, teamDetail) => (state.teamDetail = teamDetail),

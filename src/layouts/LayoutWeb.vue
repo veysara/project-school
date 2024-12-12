@@ -1,14 +1,13 @@
 <template>
   <div class="wrap">
-    <!-- Header -->
     <Header />
-    <main class="wrap-content">
-      <router-view/>
-    </main>
-    <!-- Footer -->
+      <main class="wrap-content">
+        <router-view/>
+      </main>
     <Footer />
   </div>
 </template>
+
 <script>
   import Header from "@layouts/header/Header";
   import Footer from "@layouts/footer/Footer";
@@ -19,6 +18,5 @@
       Header,
       Footer
     },
-
   };
 </script>

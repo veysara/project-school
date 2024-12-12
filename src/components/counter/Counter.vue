@@ -19,35 +19,31 @@ eas<template>
 
 <script>
     import { mapActions, mapGetters } from 'vuex';
-   export default{
-   name:'Counter',
-   props: ['counters'],
-   data(){
-    return{
-        assetUrl: process.env.VUE_APP_ASSET_URL + '/',
-        background: require('@/assets/images/funfact-line.png'),
-    }
-   },
-   methods: {
-      ...mapActions(['fetchHome']),
-    },
-    computed: {
-      ...mapGetters(['home']),
-    },
-    mounted() {
-      this.fetchHome({
-        filter: {
-          locale: this.$router.currentRoute.params.locale
-            ? this.$router.currentRoute.params.locale
-            : 'en',
+
+    export default{ name:'Counter', props: ['counters'], data(){
+            return{
+                assetUrl: process.env.VUE_APP_ASSET_URL + '/',
+                background: require('@/assets/images/funfact-line.png'),
+            }
         },
-      });
-    },
-
-}
-    
+        methods: {
+            ...mapActions(['fetchHome']),
+        },
+        computed: {
+            ...mapGetters(['home']),
+        },
+        mounted() {
+            this.fetchHome({
+                filter: {
+                locale: this.$router.currentRoute.params.locale
+                    ? this.$router.currentRoute.params.locale
+                    : 'en',
+                },
+            });
+        },
+    }
 </script>
-<style lang="scss">
-@import '@assets/scss/components/counter';
 
+<style lang="scss">
+    @import '@assets/scss/components/counter';
 </style>

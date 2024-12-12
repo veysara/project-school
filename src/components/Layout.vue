@@ -1,14 +1,15 @@
 <template>
   <div class="hello">
-    <Header/>
-    <h3>hellos</h3>
-    <Footer/>
+    <Header />
+      <h3>hellos</h3>
+    <Footer />
   </div>
 </template>
 
 <script>
   import Header from '../layouts/header/Header'
   import Footer from '../layouts/footer/Footer'
+  
   export default {
     name: 'HelloWorld',
     components: {

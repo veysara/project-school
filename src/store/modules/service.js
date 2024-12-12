@@ -1,8 +1,10 @@
 import api from "@/api";
+
 const state = {
     service: {},
     serviceDetail:{},
 }
+
 const getters = {
     service: (state) => state.service,
     serviceDetail: (state) => state.serviceDetail,
@@ -20,6 +22,7 @@ const actions = {
         })
     }
 }
+
 const mutations = {
     setService: (state, service) => (state.service = service),
     setServiceDetail: (state, serviceDetail) => (state.serviceDetail = serviceDetail),

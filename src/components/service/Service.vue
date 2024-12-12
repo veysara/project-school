@@ -5,9 +5,10 @@
     >
       <div class="container">
         <div class="head text-center mb-4" 
-         data-aos="zoom-in"
-                  data-aos-duration="1000"
-                  data-aos-delay='200'>
+          data-aos="zoom-in"
+          data-aos-duration="1000"
+          data-aos-delay='200'
+        >
           <h5 class="head-title">Popular it Service</h5>
           <div class="title"><h2>Solutions For It Business</h2></div>
         </div>
@@ -42,8 +43,7 @@
                   <h4>{{ service.title }}</h4>
                 </div>
                 <div class="short one-line">{{ service.shortDescript }}</div>
-                <Button link="#" class="btn-service" title="Learn More">
-                </Button>
+                <Button link="#" class="btn-service" title="Learn More"></Button>
               </div>
             </div>
           </div>
@@ -53,38 +53,34 @@
 </template>
 
 <script>
-    import Button from '@/core/components/button/Button';
-    import { mapActions, mapGetters } from 'vuex';
-    export default {
-    name:'serviceList',
-    props: ['serviceLists'],
-    
-    components: {
-        Button
-    },
-    data(){
-        return{
-          assetUrl: process.env.VUE_APP_ASSET_URL + '/',
-            serviceBackground: require('@/assets/images/list-service.png'),
-        }
-    },
-    methods: {
-      ...mapActions(['fetchHome']),
-    },
-    computed: {
-      ...mapGetters(['home']),
-    },
-    mounted() {
-      this.fetchHome({
-        filter: {
-          locale: this.$router.currentRoute.params.locale
-            ? this.$router.currentRoute.params.locale
-            : 'en',
-        },
-      });
-    },
+  import Button from '@/core/components/button/Button';
+  import { mapActions, mapGetters } from 'vuex';
+
+  export default { name:'serviceList', props: ['serviceLists'], components: { Button }, data(){
+    return{
+      assetUrl: process.env.VUE_APP_ASSET_URL + '/',
+        serviceBackground: require('@/assets/images/list-service.png'),
+    }
+  },
+  
+  methods: {
+    ...mapActions(['fetchHome']),
+  },
+  computed: {
+    ...mapGetters(['home']),
+  },
+  mounted() {
+    this.fetchHome({
+      filter: {
+        locale: this.$router.currentRoute.params.locale
+          ? this.$router.currentRoute.params.locale
+          : 'en',
+      },
+    });
+  },
 }
 </script>
+
 <style lang="scss">
-@import '@assets/scss/components/service.scss';
+  @import '@assets/scss/components/service.scss';
 </style>

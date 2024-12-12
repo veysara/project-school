@@ -10,6 +10,7 @@ export class AboutService extends ApiService {
   }
 
   async fetchAbout(params){
+    
     return super.fetch(this.endpoint.about, {
         params: params,
         retries: 2,
@@ -24,7 +25,6 @@ export class AboutService extends ApiService {
                 const results = JSON.parse(data).data;
                 console.log(results);
                 return results;
-                
             }
         ]
     })

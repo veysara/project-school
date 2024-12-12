@@ -8,7 +8,6 @@
     </div>
 </template>
 
-
 <script>
     export default {
         name: 'AboutSchool',
@@ -22,7 +21,6 @@
         },
     };
 </script>
-
 
 <style lang="scss">
     @import '../../assets/scss/pages/about/about-school';

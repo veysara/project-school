@@ -11,22 +11,21 @@ export class ConsaltanService extends ApiService {
 
   async fetchConsaltan(params){
     return super.fetch(this.endpoint.consaltan, {
-        params: params,
-        retries: 2,
-        transformResponse: [
-            function (data) {
-                if(!data){
-                    return {
-                        contents: [],
-                        sucess: false,
-                    };
-                }
-                const results = JSON.parse(data).data;
-                console.log(results);
-                return results;
-                
-            }
-        ]
+      params: params,
+      retries: 2,
+      transformResponse: [
+        function (data) {
+          if(!data){
+            return {
+              contents: [],
+              sucess: false,
+            };
+          }
+          const results = JSON.parse(data).data;
+          console.log(results);
+          return results;
+        }
+      ]
     })
   }
 }

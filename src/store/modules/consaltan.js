@@ -1,7 +1,9 @@
 import api from "@/api";
+
 const state = {
     consaltan: {},
 }
+
 const getters = {
     consaltan: (state) => state.consaltan,
 };
@@ -13,6 +15,7 @@ const actions = {
         })
     }
 }
+
 const mutations = {
     setConsaltan: (state, consaltan) => (state.consaltan = consaltan),
 };
